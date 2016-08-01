@@ -1,0 +1,40 @@
+.wrapper-photo {
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: black;
+  img {
+    width: 100%;
+    background-position: center;
+    filter: opacity(.7)
+
+  }
+}
+
+.flat {
+  padding: 50px 0;
+  display: flex;
+  justify-content: flex-start;
+  p {
+    color: $gray-light;
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .owner {
+    text-align: center;
+  }
+  .description {
+    margin-left: 20px;
+  }
+}
+
+form {
+  padding: 15px;
+  background-color: $gray-lighter;
+  margin: 15px;
+}

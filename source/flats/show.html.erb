@@ -1,0 +1,62 @@
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+<div class="wrapper-photo">
+  <%= image_tag flat.picture %>
+</div>
+
+<!-- <div class="wrapper-photo">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12"></div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-1 col-sm-6 col-sm-offset-1">
+      <div class="flat">
+        <div class="owner">
+          <%= image_tag flat.owner_picture, class: "avatar-xl" %>
+          <p><%= flat.owner_name.match(/.* ./) %>.</p>
+        </div>
+        <div class="description">
+          <h3><%= flat.summary %></h3>
+          <p><%= flat.city %></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <form action="#">
+        <h3>Book this flat</h3>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-xs-6">
+              <input type="text" class="form-control" placeholder="checkin">
+            </div>
+            <div class="col-xs-6">
+              <input type="text" class="form-control" placeholder="checkout">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-xs-12">
+              <select name="" id="" class="form-control">
+                <option value="1">1 person</option>
+                <option value="2">2 persons</option>
+                <option value="3">3 persons</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <input type="submit" class="btn btn-danger" value="Book it" style="width: 100%">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
