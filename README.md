@@ -1,4 +1,5 @@
-## Démarrer un nouveau projet.
+## Air Bnb static middleman.
 
-1. Forkez le repo
-1. Renommez-le puis clonez-le sur votre ordinateur
+Middleman created during [Le Wagon coding bootcamp](https://www.lewagon.com), batch 31 in Bordeaux (summer 2016).
+
+Run "middleman server" in your terminal and go on [http://localhost:4567](http://localhost:4567).
